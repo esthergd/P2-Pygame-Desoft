@@ -4,8 +4,10 @@ class Handsanitizer(pygame.sprite.Sprite):
 		self.image = assets['handsanitizer_img']
 		self.mask = pygame.mask.from_surface(self.image)
 		self.rect = self.image.get_rect()
-		self.rect.x = random.randint(600, WIDTH + handsanitizer_WIDTH)
-		self.rect.y = random.randint(30,600)
+		self.rect.x = random.randint(300, 600)
+		self.rect.y = ground
 		self.rect.bottom = ground
-		self.speedx = 0
-		self.speedy = 0
+		self.speedx = world_speed
+
+	def update(self):
+		self.rect.x += self.speedx 
