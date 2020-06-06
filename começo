@@ -1,0 +1,49 @@
+"""
+Projeto Final Desoft - Pygame
+Autores: Esther Dagir, Pedro Tibério e Ricardo Teshima
+"""
+
+import os
+import sys #dps eu vou usar o sys.exit() pra acabar o jogo
+import pygame
+import random
+
+pygame.init() #Inicia pygame
+#pygame.mixer.init()
+
+# ---- Gera tela principal
+WIDTH = 600 					#Largura da tela
+HEIGHT = 600 					#Altura da Tela
+window = pygame.display.set_mode((WIDTH, HEIGHT))	#Definição do tamanho da tela
+pygame.display.set_caption('Jogo - Esther Dagir, Pedro Tiberio e Ricardo Tashima')	#Nome do jogo
+
+# ---- Inicia assets
+#Dimensões dos objetos
+FPS = 60		#Frames Per Second
+player_WIDTH = 50			#Largura da imagem do jogador
+palyer_HEIGHT = 38			#Altura da imagem do jogador
+handsanitizer_WIDTH = 50 	#Largura da imagem do álcool gel
+handsanitizer_HEIGHT = 38	#Altura da imagem do jogador
+virus_WIDTH = 40
+virus_HEIGHT = 28
+
+#Cores
+white = (255, 255, 255)
+black = (0, 0, 0)
+red = (255, 0, 0)
+green = (0, 255, 0)
+blue = (0, 0, 255)
+yellow = (255, 255, 0)
+brown = (165, 42, 42)
+
+gravity = 2              #Aceleração da gravidade
+jump_size = 30           #Velocidade inicial do pulo
+ground = HEIGHT*5//6     #Altura do chão
+font = pygame.font.SysFont('centurygothic', 50)
+frasecapa = font.render('Corona Run', True, brown) #dei um nome provisorio kkkk era só pra testar
+
+
+#Estados:
+walking = 0
+jumping = 1
+falling = 2
