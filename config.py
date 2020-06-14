@@ -1,7 +1,7 @@
 import pygame
 
-WIDTH = 800 					#Largura da tela
-HEIGHT = 600 					#Altura da Tela
+WIDTH = 1000					#Largura da tela
+HEIGHT = 650 					#Altura da Tela
 FPS = 60		#Frames Per Second
 
 #Imagens
