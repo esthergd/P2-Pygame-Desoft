@@ -12,9 +12,21 @@ Sendo assim, o intuito do jogo é driblar (pular) os coronas e tentar pegar o m�
 
 Porém, cuidado! Nem sempre será possível pegar o álcool E pular o corona, é preciso atenção!
 
-Pontuação: Você ganha 10 pontos a cada corona que você pula e a cada álcool que você coleta!
+Pontuação: Você ganha 10 pontos a cada corona que você pular e a cada álcool que você coletar!
 
-Instruções: Para jogar, use a tecla espaço para pular e a tecla P para pausar.
+Instruções do jogo: Para jogar, use a tecla espaço para pular e a tecla P para pausar.
+
+Instruções para baixar o jogo: 
+
+1. Primeiramente, será necessário baixar a biblioteca pygame: abra o terminal do seu computador (tecla Windows + R, 
+digite cmd e aperte enter). No terminal, digite "pip install pygame" sem as aspas e aperte enter.
+
+2. Clone o repositório, com os arquivos main.py, sprites.py, config.py, highscore.txt e as pastas "img" e "sounds", 
+no seu computador.
+
+3. Abra os arquivos no editor de texto VS Code e dê run ("seta" verde no canto superior direito) apenas no arquivo main.py.
+
+Obs: o arquivo highscore é um arquivo propositalmente em branco, pois sua única função é armazenar o valor do highscore.
 
 Vídeo do jogo em funcionamento: https://youtu.be/cuVS4VozAjo
 
