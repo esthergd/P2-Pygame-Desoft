@@ -27,9 +27,9 @@ blue = (0, 0, 255)
 yellow = (255, 255, 0)
 brown = (165, 42, 42)
 
-FONT_NAME = 'centurygothic'
-TITLE = 'Corona Run'
-HS_FILE = 'highscore.txt'
+FONT_NAME = 'centurygothic'	#Fonte das escritas
+TITLE = 'Corona Run'		#Título
+HS_FILE = 'highscore.txt'	#Documento que armazena o highscore
 
 gravity = 2              #Aceleração da gravidade
 jump_size = 30           #Velocidade inicial do pulo
