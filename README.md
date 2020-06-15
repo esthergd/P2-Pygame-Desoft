@@ -18,8 +18,8 @@ Instruções do jogo: Para jogar, use a tecla espaço para pular e a tecla P par
 
 Instruções para baixar o jogo: 
 
-1. Primeiramente, será necessário baixar a biblioteca pygame: abra o terminal do seu computador (tecla Windows + R, 
-digite cmd e aperte enter). No terminal, digite "pip install pygame" sem as aspas e aperte enter.
+1. Primeiramente, será necessário baixar a biblioteca pygame: abra o terminal Anaconda Prompt no seu computador e
+digite "pip install pygame" sem as aspas e aperte enter.
 
 2. Clone o repositório, com os arquivos main.py, sprites.py, config.py, highscore.txt e as pastas "img" e "sounds", 
 no seu computador.
@@ -34,4 +34,4 @@ Referências:
 - Canal KidsCanCode no Youtube (https://www.youtube.com/playlist?list=PLsk-HSGFjnaH5yghzu7PcOzm9NhsW0Urw)
 - Site Pygame (www.pygame.org)
 - Tutoriais oferecidos pelos professores de Design de Software
-- Site Open Game Art (www.opengameart.org)
+- Site Open Game Art (www.opengameart.org)	
