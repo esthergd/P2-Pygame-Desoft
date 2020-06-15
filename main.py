@@ -93,7 +93,6 @@ class Game:
 
     def update(self):
         # Game loop update
-
         self.background_rect.x += self.world_speed
         if self.background_rect.right < 0:
             self.background_rect.x += self.background_rect.width
@@ -116,7 +115,6 @@ class Game:
                 sprite.rect.x = random.randrange(1000, 1400)
             sprite.speedx = self.world_speed
 
-        #Die
         hits_pc = pygame.sprite.spritecollide(self.player, self.all_corona, True, pygame.sprite.collide_mask)
         hits_ph = pygame.sprite.spritecollide(self.player, self.all_handsanitizers, True, pygame.sprite.collide_mask)
         if hits_pc:
@@ -171,6 +169,7 @@ class Game:
         pygame.display.flip()
 
     def draw_text(self ,text, size, color, x, y):
+        #Escrita
         font = pygame.font.Font(self.font_name, size)
         text_surface = font.render(text, True, color)
         text_rect = text_surface.get_rect()
@@ -178,6 +177,7 @@ class Game:
         self.screen.blit(text_surface, text_rect)
 
     def start_screen(self):
+        #Tela de início
         pygame.mixer.music.play(loops = -1)
         pygame.mixer.music.set_volume(.1)
         self.screen.blit(self.background, self.background_rect)
@@ -212,6 +212,7 @@ class Game:
         self.wait_for_key()
 
     def wait_for_key(self):
+        #Espera o usuário apertar uma tecla para fazer um comando
         wait = True
         while wait:
             self.clock.tick(FPS)
@@ -222,6 +223,7 @@ class Game:
                 if event.type == pygame.KEYUP:
                     wait = False
 
+#Roda o jogo
 g = Game()
 g.start_screen()
 while g.running:
