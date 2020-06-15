@@ -3,9 +3,13 @@ import pygame
 import random 
 from config import *
 
+#Caminho para as imagens
 dir = path.dirname(__file__)
 img_dir = path.join(dir, 'img')
 
+#Sprites
+
+#Player
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -40,6 +44,7 @@ class Player(pygame.sprite.Sprite):
             self.state = jumping
             self.jump_sound.play()
 
+#Álcool em gel
 class Handsanitizer(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -54,6 +59,7 @@ class Handsanitizer(pygame.sprite.Sprite):
     def update(self):
         self.rect.x += self.speedx
 
+#Coronavírus
 class Corona(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
