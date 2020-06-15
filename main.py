@@ -1,5 +1,5 @@
 """
-Projeto Final Desoft - Pygame
+Projeto Final Desoft - Corona Run
 Autores: Esther Dagir e Pedro Tibério
 """
 
@@ -84,7 +84,7 @@ class Game:
     def run(self):
         # Game loop
         self.playing = True
-        pygame.time.set_timer(pygame.USEREVENT, 5000)
+        pygame.time.set_timer(pygame.USEREVENT, 8000)
         while self.playing:
             self.clock.tick(FPS)
             self.events()
@@ -184,7 +184,7 @@ class Game:
         pygame.mixer.music.play(loops = -1)
         pygame.mixer.music.set_volume(.1)
         self.screen.blit(self.background, self.background_rect)
-        self.draw_text(titulo, 50, brown, WIDTH/2, HEIGHT/5)
+        self.draw_text(TITLE, 50, brown, WIDTH/2, HEIGHT/5)
         self.draw_text("Use space key to jump and P to pause", 24, brown, WIDTH/2, HEIGHT/2.5)
         self.draw_text("Press any key to start", 24, brown, WIDTH/2, HEIGHT/1.75)
         self.draw_text("Highscore: " + str(self.highscore), 24, brown, WIDTH/2, 30)

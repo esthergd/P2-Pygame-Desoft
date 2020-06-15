@@ -28,7 +28,7 @@ yellow = (255, 255, 0)
 brown = (165, 42, 42)
 
 FONT_NAME = 'centurygothic'
-titulo = 'Corona Run'
+TITLE = 'Corona Run'
 HS_FILE = 'highscore.txt'
 
 gravity = 2              #Aceleração da gravidade
