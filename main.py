@@ -39,7 +39,6 @@ class Game:
         #Sons
         self.snd_dir = path.join(self.dir, 'sounds')
         self.go_sound = pygame.mixer.Sound(path.join(self.snd_dir, 'GameOver.wav'))
-        #self.ph_sound = pygame.mixer.Sound(path.join(self.snd_dir, 'PlayerAlcool.wav'))
         pygame.mixer.music.load(path.join(self.snd_dir, 'musicafundo.mp3'))
 
         #Dim screen para o pause
@@ -130,8 +129,6 @@ class Game:
 
         if hits_ph:
             self.score += 10
-            #self.ph_sound.play()
-            #self.ph_sound.set_volume(.5)
             self.all_handsanitizers.add(self.handsanitizer)
             self.all_sprites.add(self.handsanitizer)
             self.handsanitizer.rect.x = random.randrange(1000, 1400)
