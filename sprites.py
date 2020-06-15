@@ -7,7 +7,7 @@ dir = path.dirname(__file__)
 img_dir = path.join(dir, 'img')
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self): #add game se precisar
+    def __init__(self):
         pygame.sprite.Sprite.__init__(self)
 
         self.image = pygame.image.load(path.join(img_dir, 'player.png')).convert_alpha()
